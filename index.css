@@ -1,0 +1,521 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 4vh;
+    background-color: black;
+    background-image: url("./photos/sony.PNG");
+    float: right;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 8%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 6vh;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    padding: 10px;
+}
+
+.left_box {
+    display: flex;
+    gap: 30px;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.left_box a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.nav_img {
+    width: 50px;
+}
+
+.right_box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sign_in_button {
+    background-color: rgb(44, 41, 245);
+    color: white;
+    font-weight: bold;
+    border-radius: 40px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.menu_input {
+    height: 30px;
+}
+
+.intro_title {
+    width: 100%;
+    height: 80vh;
+}
+
+.intro_background {
+    background-image: url("./photos/tlou2.jpg");
+    width: 100%;
+    height: 100%;
+}
+
+.intro_content {
+    margin-top: -16%;
+    margin-left: 10%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.intro_content h1 {
+    font-size: 50px;
+}
+
+.intro_content h3 {
+    font-size: 20px;
+}
+
+.intro_button {
+    background-color: white;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 40px;
+    margin-left: 10%;
+    border: none;
+}
+
+.game_list {
+    width: 100%;
+    height: 19vh;
+    margin-top: 2%;
+}
+
+.photo_list {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 8px solid;
+    border-image: repeating-linear-gradient(135deg,#F8CA00 0 10px,#E97F02 0 20px,#BD1550 0 30px) 8;
+    -webkit-mask: 
+      conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
+       var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+      conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
+       0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+      linear-gradient(#000 0 0) padding-box no-repeat;
+    transition: .3s, -webkit-mask-position .3s .3s;
+  }
+
+  .photo_list img:hover {
+    --_i: 100%;
+    color: #CC333F;
+    transition: .3s, -webkit-mask-size .3s .3s;
+  } 
+
+.ps5_console {
+    width: 100%;
+    display: flex;
+}
+
+.ps5_console_content {
+    width: 50%;
+    padding-top: 15%;
+    padding-left: 10%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.ps5_console_content h1 {
+    font-size: 50px;
+}
+
+.ps5_console_content p {
+    font-size: 25px;
+}
+
+.ps5_console_button {
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 40px;
+    padding: 16px;
+
+}
+
+.ps5_console_button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.ps5_console aside {
+    width: 50%;
+    float: right;
+}
+
+.ps5_console_picture {
+    height: 90vh;
+}
+
+.ps5_console_picture:hover {
+    animation: shake 0.25s;
+    animation-iteration-count: infinite;
+}
+@keyframes shake {
+    0% {transform: translate(1px, 1px) rotate(0deg);}
+    10% {transform: translate(-1px, -2px) rotate(-1deg);}
+    20% {transform: translate(-3px, 0px) rotate(1deg);}
+    30% {transform: translate(3px, 2px) rotate(0deg);}
+    40% {transform: translate(1px, -1px) rotate(1deg);}
+    50% {transform: translate(-1px, 2px) rotate(-1deg);}
+    60% {transform: translate(-3px, 1px) rotate(0deg);}
+    70% {transform: translate(3px, 1px) rotate(-1deg);}
+    80% {transform: translate(-1px, -1px) rotate(1deg);}
+    90% {transform: translate(1px, 2px) rotate(0deg);}
+    100% {transform: translate(1px, -2px) rotate(-1deg);}
+}
+
+.purple {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.purple_background {
+    background-image: url("./photos/hogwarts-background.jpg");
+    width: 100%;
+    height: 100vh;
+}
+
+.purple_content {
+    width: 30%;
+    margin-left: 8%;
+    margin-top: -36%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.purple_content h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.purple_content h2 {
+    color: antiquewhite;
+}
+
+.purple_content button {
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.purple_content_a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.purple_list {
+    display: flex;
+    width: 20%;
+    height: 25%;
+    object-fit: cover;
+    justify-content: space-between;
+    gap: 10%;
+    margin-top: 4%;
+    margin-left: 8%;
+}
+
+.purple_img1:hover {
+    animation: glow1 1s ease-in-out infinite;
+}
+@keyframes glow1 {
+    from {
+        box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #ca7f1c, 0 0 40px #ca7f1c, 0 0 50px #ca7f1c, 0 0 60px #ca7f1c, 0 0 70px #ca7f1c;
+    }
+    to {
+        box-shadow: 0 0 20px #FFFFFF, 0 0 30px #edb575, 0 0 40px #edb575, 0 0 50px #edb575, 0 0 60px #edb575, 0 0 70px #edb575, 0 0 80px #edb575;
+    }
+}
+
+.purple_img2:hover {
+    animation: glow2 1s ease-in-out infinite;
+}
+@keyframes glow2 {
+    from {
+        box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #0000FF, 0 0 40px #0000FF, 0 0 50px #0000FF, 0 0 60px #0000FF, 0 0 70px #0000FF;
+    }
+    to {
+        box-shadow: 0 0 20px #FFFFFF, 0 0 30px #758ded, 0 0 40px #758ded, 0 0 50px #758ded, 0 0 60px #758ded, 0 0 70px #758ded, 0 0 80px #758ded;
+    }
+}
+
+.purple_img3:hover {
+    animation: glow3 1s ease-in-out infinite;
+}
+@keyframes glow3 {
+    from {
+        box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #ff00aa, 0 0 40px #ff00aa, 0 0 50px #ff00aa, 0 0 60px #ff00aa, 0 0 70px #ff00aa;
+    }
+    to {
+        box-shadow: 0 0 20px #FFFFFF, 0 0 30px #ff8cf9, 0 0 40px #ff8cf9, 0 0 50px #ff8cf9, 0 0 60px #ff8cf9, 0 0 70px #ff8cf9, 0 0 80px #ff8cf9;
+    }
+}
+
+.gow {
+    width: 100%;
+    height: 100vh;
+}
+
+.gow_background {
+    background-image: url("./photos/gow-background.jpg");
+    width: 100%;
+    height: 100vh;
+}
+
+.gow_content {
+    width: 40%;
+    margin-left: 4%;
+    margin-top: -20%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.gow_content h1 {
+    color: white;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: lighter;
+}
+
+.gow_content h2 {
+    color: white;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: lighter;
+}
+
+.gow_content button {
+    border: none;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.gow_a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.vr_img {
+    width: 100%;
+    height: 90vh;
+}
+
+.vr_content {
+    width: 40%;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 6%;
+    margin-top: -28vh;
+    color: white;
+}
+
+.vr_content h1 {
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.vr_content h2 {
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.vr_content button {
+    border: none;
+    border-radius: 40px;
+    padding: 10px 20px;
+}
+
+.vr_a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.explore_playstation {
+    margin: 10% 2% 2% 2%;
+}
+
+.explore_playstation_title {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.explore_playstation_title h1 {
+    font-size: 35px;
+    font-weight: lighter;
+}
+
+.explore_playstation_title p {
+    font-size: 20px;
+    font-weight: lighter;
+    color: gray;
+}
+
+.explore_list {
+    width: 100%;
+    height: 30vh;
+    margin-top: 8%;
+}
+
+.playstation_list {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    object-fit: cover;
+}
+
+.follow_us {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 40vh;
+}
+
+.follow_us_title {
+    text-align: center;
+    padding-top: 4%;
+}
+
+.follow_us_title h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.follow_us_list {
+    width: 100%;
+    height: 12vh;
+}
+
+.social_media {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.marvel {
+    padding: 4%;
+}
+
+.marvel img {
+    width: 6%;
+}
+
+.marvel_detail h1 {
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    background-color: #1742c2;
+    width: 100%;
+    height: 60vh;
+}
+
+.footer_playstation {
+    width: 20%;
+    padding-left: 3.5rem;
+    padding-top: 1rem;
+}
+
+.container {
+    display: flex;
+    padding: 3rem;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+.container .section {
+    flex-basis: 15%;
+    padding: 0 20px;
+}
+
+.section h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer_content ul {
+    font-size: 14px;
+    margin-left: -17%;
+}
+
+.footer_connect {
+    width: 100%;
+}
+
+.connect_list {
+    object-fit: cover;
+}
+
+.footer_bottom center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+}
+
+.footer_bottom center span{
+    color: #656565;
+}
+
+.footer_bottom center a{
+    text-decoration: none;
+}
+
+.footer_bottom center a:hover{
+    text-decoration: underline;
+}
+
+.footer_sony {
+}
+.sony_img {
+    width: 20%;
+    margin-top: -4%;
+}
+
+.sony_content {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    padding-left: 4rem;
+    margin-top: -4%;
+    font-size: 14px;
+}
+
+,.sony_content a {
+    color: white;
+}
