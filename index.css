@@ -21,11 +21,14 @@ header {
     color: black;
     font-family: 'Arial', sans-serif;
     padding: 10px;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
 .left_box {
     display: flex;
-    gap: 30px;
+    gap: 50px;
     padding-left: 20px;
     align-items: center;
 }
@@ -90,6 +93,8 @@ header {
 
 .menu_input {
     height: 30px;
+    font-size: 20px;
+    color: #151515;
 }
 
 .intro_title {
@@ -138,7 +143,6 @@ header {
     display: flex;
     justify-content: space-between;
     height: 100%;
-    object-fit: cover;
     cursor: pointer;
     transition: transform .2s
     /* border: 8px solid;
@@ -153,11 +157,13 @@ header {
   }
 
 .photo_list img {
-    transition: transform .2s
+    transition: transform .2s;
+    width: 15%;
+    object-fit: cover;
 }
 
 .photo_list img:hover {
-    transform: scale(1.2)
+    transform: scale(1.5)
     /* --_i: 100%;
     color: #CC333F;
     transition: .3s, -webkit-mask-size .3s .3s; */
@@ -200,11 +206,6 @@ header {
     text-decoration: none;
     font-weight: bold;
 
-}
-
-.ps5_console aside {
-    width: 50%;
-    float: right;
 }
 
 .ps5_console_picture {
@@ -276,14 +277,17 @@ header {
 
 .purple_list {
     display: flex;
-    width: 20%;
     height: 25%;
-    object-fit: cover;
-    justify-content: space-between;
-    gap: 10%;
+    justify-content: space-around;
     margin-top: 4%;
-    margin-left: 8%;
 }
+
+.purple_item {
+    object-fit: cover;
+    width: 30%;
+
+}
+
 
 .purple_img1:hover {
     animation: glow1 1s ease-in-out infinite;
@@ -403,7 +407,7 @@ header {
 }
 
 .explore_playstation {
-    margin: 10% 2% 2% 2%;
+    margin: 5% 10% 20% 10%;
 }
 
 .explore_playstation_title {
@@ -430,9 +434,43 @@ header {
 
 .playstation_list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     height: 100%;
+    gap: 10%;
+}
+
+.playstation_list_item {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.playstation_list_item h1 {
+    font-size: 40px;
+}
+
+.playstation_list_item button {
+    border: none;
+    background-color: #2344ff;
+    padding: 14px 20px;
+    border-radius: 40px;
+
+}
+
+.playstation_list_item a {
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+}
+
+.playstation_list_item p {
+    font-size: 20px;
+    color: gray;
+}
+
+.playstation_list_item img {
     object-fit: cover;
+    height: 100%;
 }
 
 .follow_us {
@@ -459,8 +497,9 @@ header {
 
 .social_media {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100%;
+    gap: 4%;
 }
 
 .marvel {
@@ -514,10 +553,13 @@ footer {
 
 .footer_connect {
     width: 100%;
+    height: 10vh;
 }
 
 .connect_list {
-    object-fit: cover;
+    display: flex;
+    height: 20%;
+    gap: 4%;
 }
 
 .footer_bottom center{
@@ -538,8 +580,6 @@ footer {
     text-decoration: underline;
 }
 
-.footer_sony {
-}
 .sony_img {
     width: 20%;
     margin-top: -4%;
